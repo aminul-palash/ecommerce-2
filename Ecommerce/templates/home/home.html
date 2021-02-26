@@ -1,0 +1,100 @@
+{% extends "home/base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+{% block navbar-left %}
+
+{% endblock %}
+
+{% block navbar-right %}
+{% include "home/_navbar.html" with active_link="home" %}
+{% endblock %}
+
+
+{% block splash %}
+{% include "home/slider.html"%}
+{% endblock splash %}
+
+{% block container %}
+
+<div class="container objectives">
+  <div class="row  ">
+    <div class="col-md-12  ">
+      <div class="center-heading">
+        <h2>What we offer</h2><span class="center-line"></span>
+        <p class="lead"></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class='text-center'><i class="fa fa-book"></i></div>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam
+        Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos
+        aperiam Lorem ipsum
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="text-center"><i class="fa fa-newspaper-o"></i></div>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam
+        Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos
+        aperiam Lorem ipsum
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="text-center"><i class="fa fa-rss"></i></div>
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam
+        Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos
+        aperiam Lorem ipsum
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% include "home/bookshowcase.html" %}
+
+
+<div class="container" style="margin-top:100px"></div>
+
+<div class="container-fluid about-section">
+  
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 content">
+          <div class="center-heading">
+              <h2>About Us</h2><span class="center-line"></span>
+              <p class="lead"></p>
+            </div>
+        <div class="">  
+          Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aspernatur expedita veritatis architecto a quidem molestiae ipsum voluptas laborum! Tempore laboriosam in, delectus sit ratione ab doloremque culpa doloribus sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam
+          Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aspernatur expedita veritatis architecto a quidem molestiae ipsum voluptas laborum! Tempore laboriosam in, delectus sit ratione ab doloremque culpa doloribus sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam
+          Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.ab eos aperiam Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem aspernatur expedita veritatis architecto a quidem molestiae ipsum voluptas laborum! Tempore laboriosam in, delectus sit ratione ab doloremque culpa doloribus sunt.
+        </div>
+      </div>
+    </div>
+ 
+</div><!--about-section-->
+
+
+<div class="container" style="margin-top:100px">
+
+
+
+  </div>
+
+
+{% endblock container %}
+
+{% block scripts %}
+
+{% endblock scripts %}
